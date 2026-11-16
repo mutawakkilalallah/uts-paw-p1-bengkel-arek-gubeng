@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bengkel Arek Gubeng — Servis Motor Jujur di Surabaya</title>
+  <meta name="description" content="Bengkel motor di Gubeng, Surabaya. Servis ringan, ganti oli, tune-up injeksi, dan booking online tanpa antre.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <!-- Framework: Tailwind CSS v4 (hasil build, kustomisasi di css/tailwind-input.css) -->
+  <link rel="stylesheet" href="css/tailwind.css">
+  <!-- CSS sendiri dimuat SETELAH framework -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Navigasi utama">
+      <a class="brand" href="index.html"><span class="brand-name">Arek Gubeng</span><span class="brand-tag">Bengkel Motor · Surabaya</span></a>
+      <ul class="nav-list">
+        <li><a href="index.html" aria-current="page">Beranda</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a class="nav-cta" href="booking.html">Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="konten">
+    <section class="hero" aria-labelledby="judul-hero">
+      <img class="hero-img"
+           src="img/hero-800.jpg"
+           srcset="img/hero-800.jpg 800w, img/hero-1600.jpg 1600w"
+           sizes="100vw"
+           width="1600" height="1000"
+           alt="Mekanik duduk di lantai bengkel sedang memperbaiki mesin sepeda motor di antara peralatan">
+      <div class="container">
+        <p class="kicker">Bengkel motor · Gubeng, Surabaya</p>
+        <h1 id="judul-hero">Motor brebet? <span class="hl">Gas ke Arek Gubeng.</span></h1>
+        <p class="lead">Mekanik telaten, estimasi biaya di depan, dan suku cadang bergaransi. Booking online, datang langsung dikerjakan — gak pakai antre.</p>
+        <div class="hero-actions">
+          <a class="btn" href="booking.html">Booking Servis</a>
+          <a class="btn btn-light" href="layanan.html">Cek Harga</a>
+        </div>
+        <ul class="hero-chips">
+          <li>Garansi servis 7 hari</li>
+          <li>Antar-jemput gratis</li>
+          <li>Buka Senin–Sabtu</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="judul-keunggulan">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Kenapa kami</p>
+          <h2 id="judul-keunggulan">Servis yang bikin tenang, bukan bikin was&#8209;was</h2>
+        </div>
+        <!-- Grid utilitas Tailwind: 1 → 2 → 4 kolom -->
+        <ul class="grid list-none gap-5 p-0 sm:grid-cols-2 lg:grid-cols-4">
+          <li class="feature">
+            <span class="feature-icon" aria-hidden="true">Rp</span>
+            <h3>Harga di depan</h3>
+            <p>Estimasi biaya dijelaskan sebelum dikerjakan. Gak ada biaya kejutan di nota.</p>
+          </li>
+          <li class="feature">
+            <span class="feature-icon" aria-hidden="true">⚙</span>
+            <h3>Mekanik telaten</h3>
+            <p>Terbiasa menangani matic injeksi, bebek karburator, sampai motor sport.</p>
+          </li>
+          <li class="feature">
+            <span class="feature-icon" aria-hidden="true">✓</span>
+            <h3>Garansi 7 hari</h3>
+            <p>Ada keluhan setelah servis? Balik lagi, kami cek ulang gratis.</p>
+          </li>
+          <li class="feature">
+            <span class="feature-icon" aria-hidden="true">➜</span>
+            <h3>Antar-jemput</h3>
+            <p>Area Gubeng, Sukolilo, dan Mulyorejo tanpa biaya tambahan.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section pt-0" aria-labelledby="judul-tentang">
+      <div class="container about">
+        <figure class="about-media">
+          <img src="img/bengkel-640.jpg"
+               srcset="img/bengkel-640.jpg 640w, img/bengkel-1200.jpg 1200w"
+               sizes="(min-width: 64em) 50vw, 100vw"
+               width="1200" height="900" loading="lazy"
+               alt="Mekanik berjongkok memeriksa komponen kecil di tengah suku cadang skuter">
+          <figcaption>Setiap komponen dicek satu per satu sebelum diganti.</figcaption>
+        </figure>
+        <div class="about-text">
+          <p class="kicker">Tentang kami</p>
+          <h2 id="judul-tentang">Dari garasi kecil di Gubeng</h2>
+          <p class="lead">Berawal dari garasi rumah pada 2019, kini Bengkel Arek Gubeng melayani ribuan motor warga Surabaya timur.</p>
+          <p>Prinsip kami sederhana: jelaskan kerusakan apa adanya, kerjakan yang memang perlu, dan biarkan pelanggan memutuskan.</p>
+        </div>
+        <dl class="stats about-stats">
+          <div><dt>Motor diservis</dt><dd>4.800+</dd></div>
+          <div><dt>Servis ringan</dt><dd>45 mnt</dd></div>
+          <div><dt>Rating</dt><dd>4,9/5</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section band" aria-labelledby="judul-proses">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Cara kerja</p>
+          <h2 id="judul-proses">Empat langkah, motor kembali enteng</h2>
+        </div>
+        <ol class="steps">
+          <li><h3>Booking online</h3><p>Pilih jadwal dan jenis servis lewat form. Tanpa antre di lokasi.</p></li>
+          <li><h3>Diagnosa</h3><p>Mekanik memeriksa motor dan memberi estimasi biaya.</p></li>
+          <li><h3>Dikerjakan</h3><p>Servis dimulai setelah kamu setuju. Bagian yang diganti ditunjukkan.</p></li>
+          <li><h3>Tes jalan</h3><p>Motor dites sebelum diserahkan, lengkap dengan garansi 7 hari.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="judul-populer">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Paling sering dipesan</p>
+          <h2 id="judul-populer">Layanan favorit arek-arek</h2>
+        </div>
+        <ul class="gallery">
+          <li class="card">
+            <span class="badge-promo">Promo</span>
+            <div class="card-media"><img src="img/servis-ringan-640.jpg" width="640" height="480" loading="lazy" alt="Mekanik berbaju merah memeriksa bagian bawah sepeda motor"></div>
+            <div class="card-body">
+              <h3>Servis Ringan</h3>
+              <p>Setel rantai, rem, busi, filter udara, dan cek kelistrikan dasar.</p>
+              <div class="card-foot"><p class="price">Rp45rb<small>mulai, jasa</small></p><a class="link-arrow" href="layanan.html">Detail</a></div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-media"><img src="img/ganti-oli-640.jpg" width="640" height="480" loading="lazy" alt="Close-up mesin motor berlapis krom yang mengkilap"></div>
+            <div class="card-body">
+              <h3>Ganti Oli</h3>
+              <p>Oli mesin dan oli gardan, untuk matic maupun manual.</p>
+              <div class="card-foot"><p class="price">Rp10rb<small>jasa, oli terpisah</small></p><a class="link-arrow" href="layanan.html">Detail</a></div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-media"><img src="img/tune-up-640.jpg" width="640" height="480" loading="lazy" alt="Detail mesin motor modern berwarna hitam"></div>
+            <div class="card-body">
+              <h3>Tune-Up Injeksi</h3>
+              <p>Bersihkan throttle body dan injektor, reset ECU, cek sensor.</p>
+              <div class="card-foot"><p class="price">Rp85rb<small>mulai, jasa</small></p><a class="link-arrow" href="layanan.html">Detail</a></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section pt-0" aria-labelledby="judul-testimoni">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Testimoni</p>
+          <h2 id="judul-testimoni">Kata pelanggan</h2>
+        </div>
+        <div class="grid-3">
+          <article class="testimonial">
+            <blockquote><p>Motor brebet seminggu, di sini 30 menit langsung beres. Harganya pas sama estimasi.</p></blockquote>
+            <div><h3>Dimas</h3><p class="who"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">Bintang 5 dari 5</span> · Keputih</p></div>
+          </article>
+          <article class="testimonial">
+            <blockquote><p>Enak bisa booking dulu, datang langsung dikerjakan. Ruang tunggunya adem, ada kopi pula.</p></blockquote>
+            <div><h3>Rina</h3><p class="who"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">Bintang 5 dari 5</span> · Gubeng</p></div>
+          </article>
+          <article class="testimonial">
+            <blockquote><p>Mekaniknya mau jelasin bagian yang rusak. Jujur, gak asal ganti part.</p></blockquote>
+            <div><h3>Pak Hasan</h3><p class="who"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">Bintang 5 dari 5</span> · Mulyorejo</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-16" aria-labelledby="judul-cta">
+      <div class="cta">
+        <div class="cta-inner">
+          <h2 id="judul-cta">Jadwal minggu ini masih ada</h2>
+          <p>Booking sekarang, pilih jam yang pas, dan motor siap dikerjakan begitu kamu datang.</p>
+          <a class="btn btn-hazard" href="booking.html">Booking Sekarang</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <section aria-labelledby="footer-tentang">
+          <h2 id="footer-tentang">Bengkel Arek Gubeng</h2>
+          <p>Bengkel motor rumahan yang naik kelas sejak 2019. Jujur soal harga, telaten soal mesin.</p>
+          <address>
+            Jl. Gubeng Kertajaya No. 17, Surabaya<br>
+            WhatsApp: <a href="tel:+6281200001717">0812-0000-1717</a>
+          </address>
+        </section>
+        <section aria-labelledby="footer-jam">
+          <h2 id="footer-jam">Jam Buka</h2>
+          <p>Senin–Sabtu<br>08.00–17.00 WIB<br>Minggu libur</p>
+        </section>
+        <section aria-labelledby="footer-menu">
+          <h2 id="footer-menu">Menu</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="layanan.html">Layanan &amp; Harga</a></li>
+            <li><a href="booking.html">Booking Servis</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="copyright">&copy; 2026 Bengkel Arek Gubeng. Foto: Wikimedia Commons.</p>
+    </div>
+  </footer>
+</body>
+</html>
