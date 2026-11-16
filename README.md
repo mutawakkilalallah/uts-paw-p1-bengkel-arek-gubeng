@@ -10,7 +10,7 @@ Dibuat dengan HTML5 semantik, CSS sendiri, dan **Tailwind CSS v4** tanpa JavaScr
 
 | NPM | Nama | Akun GitHub | Halaman yang dikerjakan |
 |---|---|---|---|
-| `<NPM>` | `<Nama>` | mutawakkilalallah | Semua halaman (dikerjakan sendiri): `index.html`, `layanan.html`, `booking.html`, `terima-kasih.html` |
+| 06.2026.1.82018 | Mutawakkil Alallah | mutawakkilalallah | Semua halaman (dikerjakan sendiri): `index.html`, `layanan.html`, `booking.html`, `terima-kasih.html` |
 
 ## Sub-tema, nama usaha, target pengguna
 
