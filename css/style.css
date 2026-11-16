@@ -195,19 +195,16 @@ a:hover { color: var(--c-primary-hover); }
   text-decoration: none;
 }
 
-.brand::before {
-  content: "AG";
+.brand-logo {
   grid-row: span 2;
-  display: grid;
-  place-items: center;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.6rem;
-  background: linear-gradient(135deg, var(--c-hazard), var(--c-accent));
-  color: #16181b;
-  font-family: var(--font-head);
-  font-weight: 800;
-  font-size: 1.05rem;
+  transition: transform var(--transition);
+}
+
+.brand:hover .brand-logo {
+  transform: rotate(-12deg);
 }
 
 .brand-name {

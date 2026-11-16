@@ -149,7 +149,8 @@ Semua foto diambil dari **Wikimedia Commons** dengan lisensi Creative Commons ya
 | `img/ban-640.jpg` | Kartu Ganti Ban | [Motorcycle tyre stack.jpg](https://commons.wikimedia.org/wiki/File:Motorcycle_tyre_stack.jpg) | Robert | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) |
 | `img/kelistrikan-640.jpg` | Kartu Kelistrikan | [Motorcycle repair shop, Bangkok (8270996736).jpg](https://commons.wikimedia.org/wiki/File:Motorcycle_repair_shop,_Bangkok_(8270996736).jpg) | Ian Gratton from Sutton-n-Craven, North Yorkshire, England | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) |
 
-- Ikon pada kartu keunggulan dan logo "AG" memakai karakter teks/Unicode, bukan gambar pihak ketiga.
+- Logo dan favicon (`img/logo.svg`, `favicon.ico`, `img/apple-touch-icon.png`) berupa kunci pas dan roda gigi yang digambar sendiri dalam SVG.
+- Ikon pada kartu keunggulan memakai karakter teks/Unicode, bukan gambar pihak ketiga.
 - Font: Barlow Condensed dan Inter dari Google Fonts (SIL Open Font License 1.1).
 
 ## Pernyataan penggunaan AI
