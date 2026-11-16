@@ -1,0 +1,19 @@
+/* Sumber Tailwind CSS v4 — dikompilasi ke css/tailwind.css
+   npx @tailwindcss/cli -i css/tailwind-input.css -o css/tailwind.css --minify */
+@import "tailwindcss";
+@source "../*.html";
+
+/* Kustomisasi: warna & font Tailwind diarahkan ke token di css/style.css */
+@theme inline {
+  --color-primary: var(--c-primary);
+  --color-on-primary: var(--c-on-primary);
+  --color-accent: var(--c-accent);
+  --color-on-accent: var(--c-on-accent);
+  --color-surface: var(--c-surface);
+  --color-ink: var(--c-text);
+  --color-muted: var(--c-muted);
+  --color-line: var(--c-border);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-head);
+  --radius-brand: var(--radius-lg);
+}
