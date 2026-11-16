@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking Servis Motor — Bengkel Arek Gubeng</title>
+  <meta name="description" content="Form booking servis motor online di Bengkel Arek Gubeng, Surabaya. Pilih jadwal dan jenis servis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <!-- Framework: Tailwind CSS v4 (hasil build, kustomisasi di css/tailwind-input.css) -->
+  <link rel="stylesheet" href="css/tailwind.css">
+  <!-- CSS sendiri dimuat SETELAH framework -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Navigasi utama">
+      <a class="brand" href="index.html"><span class="brand-name">Arek Gubeng</span><span class="brand-tag">Bengkel Motor · Surabaya</span></a>
+      <ul class="nav-list">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a class="nav-cta" href="booking.html" aria-current="page">Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="konten">
+    <section class="page-hero" aria-labelledby="judul-halaman">
+      <div class="container">
+        <p class="kicker">Booking online</p>
+        <h1 id="judul-halaman">Pesan jadwal, <span class="hl">skip antrean.</span></h1>
+        <p class="lead">Isi form di bawah, kami konfirmasi lewat WhatsApp maksimal 2 jam. Kolom bertanda <span aria-hidden="true">*</span> wajib diisi.</p>
+      </div>
+    </section>
+
+    <div class="container section form-shell">
+      <form class="form" action="terima-kasih.html" method="get">
+        <h2 class="form-step full">1 · Data kamu</h2>
+
+        <div class="field">
+          <label for="nama">Nama lengkap <span class="req" aria-hidden="true">*</span></label>
+          <input id="nama" name="nama" type="text" required minlength="3" autocomplete="name" aria-describedby="nama-hint">
+          <small id="nama-hint" class="hint">Minimal 3 huruf.</small>
+        </div>
+
+        <div class="field">
+          <label for="hp">Nomor WhatsApp <span class="req" aria-hidden="true">*</span></label>
+          <input id="hp" name="hp" type="tel" required pattern="08[0-9]{8,11}" inputmode="tel" autocomplete="tel" aria-describedby="hp-hint">
+          <small id="hp-hint" class="hint">Format 08xxxxxxxxx, 10–13 digit tanpa spasi.</small>
+        </div>
+
+        <div class="field full">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" aria-describedby="email-hint">
+          <small id="email-hint" class="hint">Opsional, untuk kirim nota digital.</small>
+        </div>
+
+        <h2 class="form-step full">2 · Data motor</h2>
+
+        <div class="field">
+          <label for="plat">Nomor polisi <span class="req" aria-hidden="true">*</span></label>
+          <input id="plat" name="plat" type="text" required pattern="[A-Za-z]{1,2} ?[0-9]{1,4} ?[A-Za-z]{0,3}" autocomplete="off" aria-describedby="plat-hint">
+          <small id="plat-hint" class="hint">Contoh: L 1234 AB.</small>
+        </div>
+
+        <div class="field">
+          <label for="jenis">Jenis motor <span class="req" aria-hidden="true">*</span></label>
+          <select id="jenis" name="jenis" required aria-describedby="jenis-hint">
+            <option value="">— Pilih jenis motor —</option>
+            <option value="matic">Matic</option>
+            <option value="bebek">Bebek / manual</option>
+            <option value="sport">Sport 150cc+</option>
+          </select>
+          <small id="jenis-hint" class="hint">Menentukan estimasi biaya jasa.</small>
+        </div>
+
+        <div class="field">
+          <label for="tahun">Tahun motor</label>
+          <input id="tahun" name="tahun" type="number" min="1990" max="2026" inputmode="numeric" aria-describedby="tahun-hint">
+          <small id="tahun-hint" class="hint">Antara 1990 dan 2026.</small>
+        </div>
+
+        <div class="field">
+          <label for="km">Kilometer saat ini</label>
+          <input id="km" name="km" type="number" min="0" max="500000" step="100" inputmode="numeric" aria-describedby="km-hint">
+          <small id="km-hint" class="hint">Lihat di speedometer, boleh perkiraan.</small>
+        </div>
+
+        <h2 class="form-step full">3 · Jadwal &amp; servis</h2>
+
+        <div class="field">
+          <label for="tanggal">Tanggal servis <span class="req" aria-hidden="true">*</span></label>
+          <input id="tanggal" name="tanggal" type="date" required min="2026-11-17" aria-describedby="tanggal-hint">
+          <small id="tanggal-hint" class="hint">Paling cepat besok. Minggu libur.</small>
+        </div>
+
+        <div class="field">
+          <label for="jam">Jam datang <span class="req" aria-hidden="true">*</span></label>
+          <input id="jam" name="jam" type="time" required min="08:00" max="16:00" aria-describedby="jam-hint">
+          <small id="jam-hint" class="hint">Antara 08.00 dan 16.00.</small>
+        </div>
+
+        <fieldset class="full">
+          <legend>Jenis servis yang diinginkan</legend>
+          <div class="options options-2">
+            <label class="option" for="s-ringan"><input id="s-ringan" type="checkbox" name="servis" value="ringan"> Servis ringan</label>
+            <label class="option" for="s-oli"><input id="s-oli" type="checkbox" name="servis" value="oli"> Ganti oli</label>
+            <label class="option" for="s-tuneup"><input id="s-tuneup" type="checkbox" name="servis" value="tuneup"> Tune-up injeksi</label>
+            <label class="option" for="s-rem"><input id="s-rem" type="checkbox" name="servis" value="rem"> Servis rem</label>
+            <label class="option" for="s-ban"><input id="s-ban" type="checkbox" name="servis" value="ban"> Ganti ban</label>
+            <label class="option" for="s-listrik"><input id="s-listrik" type="checkbox" name="servis" value="listrik"> Kelistrikan</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="full">
+          <legend>Cara datang <span class="req" aria-hidden="true">*</span></legend>
+          <div class="options options-2">
+            <label class="option" for="c-sendiri"><input id="c-sendiri" type="radio" name="cara" value="sendiri" required> Saya bawa sendiri</label>
+            <label class="option" for="c-jemput"><input id="c-jemput" type="radio" name="cara" value="jemput"> Antar-jemput gratis</label>
+          </div>
+        </fieldset>
+
+        <div class="field full">
+          <label for="keluhan">Keluhan motor</label>
+          <textarea id="keluhan" name="keluhan" rows="4" maxlength="500" aria-describedby="keluhan-hint"></textarea>
+          <small id="keluhan-hint" class="hint">Ceritakan gejalanya, misalnya "brebet saat digas". Maksimal 500 karakter.</small>
+        </div>
+
+        <label class="option agree full" for="setuju"><input id="setuju" type="checkbox" name="setuju" value="ya" required> Saya setuju dihubungi lewat WhatsApp untuk konfirmasi jadwal. <span class="req" aria-hidden="true">*</span></label>
+
+        <div class="form-actions full">
+          <button class="btn" type="submit">Kirim Booking</button>
+          <button class="btn btn-outline btn-plain" type="reset">Kosongkan</button>
+        </div>
+      </form>
+
+      <aside class="info-card" aria-labelledby="judul-info">
+        <h2 id="judul-info">Sebelum datang</h2>
+        <ul>
+          <li>Booking minimal H-1, maksimal 14 hari ke depan.</li>
+          <li>Datang 10 menit sebelum jadwal, bawa STNK.</li>
+          <li>Antar-jemput hanya area Gubeng, Sukolilo, dan Mulyorejo.</li>
+        </ul>
+        <p class="mt-6 rounded-lg border-l-4 border-primary bg-surface p-4 text-ink" role="note"><strong>Butuh cepat?</strong> Chat WhatsApp <a href="tel:+6281200001717">0812-0000-1717</a>.</p>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <section aria-labelledby="footer-tentang">
+          <h2 id="footer-tentang">Bengkel Arek Gubeng</h2>
+          <p>Bengkel motor rumahan yang naik kelas sejak 2019. Jujur soal harga, telaten soal mesin.</p>
+          <address>
+            Jl. Gubeng Kertajaya No. 17, Surabaya<br>
+            WhatsApp: <a href="tel:+6281200001717">0812-0000-1717</a>
+          </address>
+        </section>
+        <section aria-labelledby="footer-jam">
+          <h2 id="footer-jam">Jam Buka</h2>
+          <p>Senin–Sabtu<br>08.00–17.00 WIB<br>Minggu libur</p>
+        </section>
+        <section aria-labelledby="footer-menu">
+          <h2 id="footer-menu">Menu</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="layanan.html">Layanan &amp; Harga</a></li>
+            <li><a href="booking.html">Booking Servis</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="copyright">&copy; 2026 Bengkel Arek Gubeng. Foto: Wikimedia Commons.</p>
+    </div>
+  </footer>
+</body>
+</html>
